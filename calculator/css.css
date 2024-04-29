@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  max-width: 400px; /* Set maximum width for the calculator */
+  width: 100%;
+  border: 2px solid #ff3333;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.display {
+  width: calc(100% - 40px);
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.square-btn {
+  padding: 0; /* Remove default padding */
+  font-size: 24px;
+  border-radius: 0 !important; /* Remove border-radius */
+  height: 70px; /* Set height to create a square button */
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #ff3333;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.btn-danger {
+  background-color: #ff3333;
+  color: #fff;
+}

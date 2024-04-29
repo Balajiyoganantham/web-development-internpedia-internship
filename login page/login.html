@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="C:\Users\balaj\OneDrive\Documents\INTERN\login page\body.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Enter Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Enter Password" required>
+            </div>
+            <div class="input-group">
+                <a href="#" id="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="divider">Or Sign Up Using</div>
+        <div class="social-buttons">
+            <button id="google-login">Google</button>
+            <button id="facebook-login">Facebook</button>
+        </div>
+        <div id="error-message"></div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="C:\Users\balaj\OneDrive\Documents\INTERN\login page\login.ts"></script>
+</body>
+</html>

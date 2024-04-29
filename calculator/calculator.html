@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\balaj\OneDrive\Documents\INTERN\calculator\css.css">
+</head>
+<body>
+  <header class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <h1>Calculator</h1>
+    </div>
+  </header>
+  <main class="py-5">
+    <div class="container">
+      <div class="calculator border border-danger p-4">
+        <input type="text" id="display" class="form-control mb-3" disabled>
+        <div class="row">
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="clearDisplay()">C</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('7')">7</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('8')">8</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('9')">9</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendOperator('/')">/</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('4')">4</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('5')">5</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('6')">6</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendOperator('*')">*</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('1')">1</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('2')">2</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('3')">3</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendOperator('-')">-</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendNumber('0')">0</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-outline-danger btn-block" onclick="appendDecimal('.')">.</button>
+          </div>
+          <div class="col-md-3 mb-2">
+            <button class="btn btn-danger btn-block" onclick="calculate()">=</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-outline-danger btn-block" onclick="appendOperator('+')">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>Designed by balaji.Y</p>
+    </div>
+  </footer>
+  <script src="C:\Users\balaj\OneDrive\Documents\INTERN\calculator\script.js"></script>
+</body>
+</html>
